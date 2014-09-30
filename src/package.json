@@ -1,0 +1,12 @@
+{
+  "name": "docker-node-demo",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A demo node application inside a Docker container",
+  "main": "index.js",
+  "author": "Love Nyberg <love.nyberg@lovemusic.se>",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "6.9.0"
+  }
+}
