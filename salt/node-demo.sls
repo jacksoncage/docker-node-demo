@@ -4,7 +4,7 @@
 {% set containerid    = salt['grains.get']('id') %}
 {% set hostport       = '808' %}
 {% set hostip         = grains['ip_interfaces']['eth0'][0] %}
-{% set noofcontainers = range(5) ‰}
+{% set noofcontainers = range(5) %}
 
 {{ name }}-image:
   docker.pulled:
