@@ -20,11 +20,6 @@
     - require:
       - docker: {{ name }}-image
 
-fetch_out_of_band:
-module.run:
-  - name: docker.stop
-  - opts: 'timeout=20'
-
 {{ name }}-remove-if-old-{{ no }}:
   cmd.run:
     - name: docker rm {{ containerid }}-{{ name }}-{{ no }}
